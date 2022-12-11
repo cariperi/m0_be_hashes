@@ -7,7 +7,7 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+p foods
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
