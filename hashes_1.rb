@@ -38,17 +38,27 @@ p foods
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email = {
+  sender: "test@test.com",
+  date_sent: "4/5/2022",
+  attachment_included: false,
+  header: "Your attention needed!",
+  open_count: 6
+}
+
 # Write code that prints your email hash to the terminal.
 
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
 
+p email.values
 
 #-------------------
 # Part 3: Many Emails - CHALLENGE!
@@ -98,3 +108,33 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+  sender: "first@test.com",
+  date_sent: "4/5/2022",
+  attachment_included: false,
+  header: "This is your first chance!",
+  open_count: 6
+},
+
+{
+  sender: "middle@test.com",
+  date_sent: "4/6/2022",
+  attachment_included: true,
+  header: "This is your second warning!",
+  open_count: 8
+},
+
+{
+  sender: "last@test.com",
+  date_sent: "4/7/2022",
+  attachment_included: false,
+  header: "Third time's a charm!",
+  open_count: 3
+}
+]
+
+p "------------"
+p emails
+p emails[-1]
